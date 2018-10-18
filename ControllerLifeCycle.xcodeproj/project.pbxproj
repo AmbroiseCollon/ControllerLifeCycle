@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C984265D202E0C3A00CEC6B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C984265C202E0C3A00CEC6B3 /* AppDelegate.swift */; };
-		C984265F202E0C3A00CEC6B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C984265E202E0C3A00CEC6B3 /* ViewController.swift */; };
 		C9842662202E0C3A00CEC6B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9842660202E0C3A00CEC6B3 /* Main.storyboard */; };
 		C9842664202E0C3A00CEC6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9842663202E0C3A00CEC6B3 /* Assets.xcassets */; };
 		C9842667202E0C3A00CEC6B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9842665202E0C3A00CEC6B3 /* LaunchScreen.storyboard */; };
+		C9842671202E0C4D00CEC6B3 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9842670202E0C4D00CEC6B3 /* AViewController.swift */; };
+		C9842674202E0D3E00CEC6B3 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9842673202E0D3E00CEC6B3 /* BViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9842659202E0C3A00CEC6B3 /* ControllerLifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControllerLifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984265C202E0C3A00CEC6B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C984265E202E0C3A00CEC6B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9842661202E0C3A00CEC6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9842663202E0C3A00CEC6B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9842666202E0C3A00CEC6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9842668202E0C3A00CEC6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9842670202E0C4D00CEC6B3 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		C9842673202E0D3E00CEC6B3 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		C984265B202E0C3A00CEC6B3 /* ControllerLifeCycle */ = {
 			isa = PBXGroup;
 			children = (
-				C984265C202E0C3A00CEC6B3 /* AppDelegate.swift */,
-				C984265E202E0C3A00CEC6B3 /* ViewController.swift */,
+				C9842672202E0C5D00CEC6B3 /* Supporting Files */,
+				C9842670202E0C4D00CEC6B3 /* AViewController.swift */,
+				C9842673202E0D3E00CEC6B3 /* BViewController.swift */,
 				C9842660202E0C3A00CEC6B3 /* Main.storyboard */,
+			);
+			path = ControllerLifeCycle;
+			sourceTree = "<group>";
+		};
+		C9842672202E0C5D00CEC6B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C984265C202E0C3A00CEC6B3 /* AppDelegate.swift */,
 				C9842663202E0C3A00CEC6B3 /* Assets.xcassets */,
 				C9842665202E0C3A00CEC6B3 /* LaunchScreen.storyboard */,
 				C9842668202E0C3A00CEC6B3 /* Info.plist */,
 			);
-			path = ControllerLifeCycle;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C984265F202E0C3A00CEC6B3 /* ViewController.swift in Sources */,
+				C9842671202E0C4D00CEC6B3 /* AViewController.swift in Sources */,
+				C9842674202E0D3E00CEC6B3 /* BViewController.swift in Sources */,
 				C984265D202E0C3A00CEC6B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ControllerLifeCycle/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ControllerLifeCycle/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.ControllerLifeCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ControllerLifeCycle/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ControllerLifeCycle/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.ControllerLifeCycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
